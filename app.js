@@ -3,6 +3,12 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.use(function(req, res, next){
+    const date = new Date();
+    console.log(`[${date.toLocaleDateString()} ${date.toLocaleTimeString()}] ${req.url}`);
+    next()
+})
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
@@ -37,9 +43,14 @@ app.get('/users/:name', (req, res) => {
 })
 
 app.get('/somme', (req, res) => {
-    
+    res.end(parseInt(req.query.a) + parseInt(req.query.b)+"")
 })
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+app.use((req, res, next) => {
+    res.status(404).send("Cette page n'existe pas!");
+});
