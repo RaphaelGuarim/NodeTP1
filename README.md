@@ -46,6 +46,8 @@ Répondez aux questions différentes questions posées par le prompt.
 Question °1)  
  A quoi sert le fichier "package.json" créé par la commande npm init?
 
+ Ce sont les diverses infos relatives au projet : la version le depot git l'auteur ect
+
 #### Création de votre premier programme Node.js
 
 Node js permet l’exécution de code javascript en dehors d'un navigateur. 
@@ -71,11 +73,18 @@ Dans notre cas, on a donc:
 Question n°2)   
 A quoi sert le fichier "package-lock.json" généré suite à l’installation d'un package npm ?
 
+Il stocke une représentation des différentes dépendances du projet donc tout les paquets installés
+
 Question n°3)  
 Il est également possible d'installer un package de la façon suivante: `npm install express --save-dev`.   
 
 Quelle est la différence entre cette commande et celle vue précédemment ?   
+
+Cela permet de sauvegarder cette dépendance uniquement pour la partie développement
+
 Est ce qu'installer express de cette façon est une bonne idée ?
+
+Oui cela réduit la taille du code et le temps de telechargement
 
 ### 2.2 Votre première route avec Express.js
 

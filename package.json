@@ -1,0 +1,26 @@
+{
+  "name": "tp1",
+  "version": "1.0.0",
+  "description": "tp node 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphaelGuarim/NodeTP1.git"
+  },
+  "author": "Raphael Guarim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaphaelGuarim/NodeTP1/issues"
+  },
+  "homepage": "https://github.com/RaphaelGuarim/NodeTP1#readme",
+  "devDependencies": {
+    "express": "^4.18.2"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
